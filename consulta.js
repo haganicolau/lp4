@@ -6,7 +6,7 @@ var _idProcurado = new ObjectID('57bfcaae677c0469a4515d59');
 MongoClient.connect('mongodb://127.0.0.1:27017/estudo',
         function(erro, db){
         if (erro) throw err;
-        db.collection('lp4').findOne({_id : _idProcurado},
+        db.collection('contatos').findOne({_id : _idProcurado},
                 function (erro, contato) {
                     if (erro) throw err;
                     console.log(contato);

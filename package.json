@@ -1,13 +1,17 @@
 {
   "name": "estudo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto criado para estudo para os alunos da Faculdade Alfa",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
+  "repository":{
+      "type":"git",
+      "url":"git+https://github.com/haganicolau/lp4"
+  },
+  "author": "Hagamenon Nicolau",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.3.0",
