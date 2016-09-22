@@ -1,17 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>LP4</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <script src="js/lib/angular.min.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <h1 class="text-center">LP4</h1>
+  <!-- diretiva ng-app: é uma diretiva que coloca nosso DOM sobre a supervisão do Angular, e nosso HTML passa a ser um documento Angular -->
+<html lang="pt-br" ng-app="biblioteca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>LP4</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
-        </div><!-- fim container -->
-    </body>
+  <!-- Customização do CSS -->
+  <link rel="stylesheet" href="css/efeito.css">
+
+  <!-- Angular JS -->
+  <script src="js/lib/angular.min.js"></script>
+
+  <!-- Módulo principal com variável Global angular -->
+  <script src="js/main.js"></script>
+
+  <!-- ControllerLivro-->
+  <script src="js/controllers/livro-controller.js"></script>
+
+  <!-- Diretiva Angular -->
+  <script src="js/directives/minha-diretiva.js"></script>
+
+<!-- Animação Angular JS -->
+<script src="js/lib/angular-animate.min.js"></script>
+
+</head>
+<body>
+  <!-- diretiva ng-controller: permite coloar esta parte do bloco sobre responsabilidade do Controller "LivroController" -->
+  <div class="container" ng-controller="LivroController">
+
+    <!-- Cabeçalho -->
+    <div class="jumbotron">
+      <h1 class="text-center">Biblioteca</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- Filtro para busca -->
+        <form>
+          <!-- ng-model: tow-way data binging premite tanto escrever quanto ler -->
+          <input ng-model="filtro" class="form-control" placeholder="Filtrar"
+        </form>
+      </div>
+    </div>
+
+    <!-- Resposta da Busca -->
+    <div class="row">
+      <!-- foreach do angular ng-repeat objeto in lista | filter: filtro criado -->
+      <div class="col-xs-4 painel-animado" ng-repeat="livro in livros | filter:filtro">
+
+        <!-- lacunas criadas para na requisição da página, a mesma ser reconstruída substituindo os valores livro.nome e livro.img-->
+        <meu-painel valor="{{livro.nome}}">
+          <img src="{{livro.img}}" class="img-responsive center-block" alt="{{livro.nome}}"/>
+        </meu-painel>
+      </div>
+    </div>
+
+  </div><!-- fim container -->
+</body>
 </html>
