@@ -10,7 +10,7 @@ module.exports = function(){
         type: String,
         required:true
       },
-      editora:{
+      img:{
         type:String,
         required: true
       },
