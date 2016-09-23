@@ -1,0 +1,56 @@
+var contato1 =  {
+    "nome": "Engenharia de Software",
+    "img": "http://diggyn.com.br/lp4/sommerville.jpg",
+    "autor": "Sommerville",
+    "aluguel": null
+  };
+  db.teste.insert(contato1);
+  
+var contato2 = {
+    "nome": "Engenharia de Software",
+    "img": "http://diggyn.com.br/lp4/pressman.jpg",
+    "autor": "Pressman",
+    "aluguel": null
+  };
+db.teste.insert(contato2);
+
+var contato3 ={
+    "nome": "Organização e Estrutura de Computadores",
+    "img": "http://diggyn.com.br/lp4/tanenbaum.jpg",
+    "autor": "Tanenbaum",
+    "aluguel": null
+  };
+db.teste.insert(contato3);
+  
+var contato4 = {
+    "nome": "Sistemas Operacionais com JAVA",
+    "img": "http://diggyn.com.br/lp4/silberchatz.jpg",
+    "autor": "Silberchatz",
+    "aluguel": null
+  };
+db.teste.insert(contato4);
+
+var contato5 =  {
+    "nome": "PHP 5",
+    "img": "http://diggyn.com.br/lp4/soares.jpg",
+    "autor": "Soares",
+    "aluguel": null
+  };
+db.teste.insert(contato5);
+
+var contato6 = {
+    "nome": "Java para WEB",
+    "img": " http://diggyn.com.br/lp4/alves.jpg",
+    "autor": "Alves",
+    "aluguel": null
+  };
+db.teste.insert(contato6);
+
+var contato7 = {
+    "nome": "JavaScript",
+    "img": "http://diggyn.com.br/lp4/reis.jpg",
+    "autor": "Reis",
+    "aluguel": null
+  }
+db.teste.insert(contato7);
+
