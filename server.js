@@ -5,7 +5,7 @@
 var http = require('http'),
     app = require('./config/express')();
     //permite conectar no banco de nome 'estudo'
-require('./config/database.js')('mongodb://localhost/estudo');
+require('./config/database.js')('mongodb://localhost/lp4');
 
 /*
  * cria um evento de ficar escutando a porta selecionada pela varíavel de 

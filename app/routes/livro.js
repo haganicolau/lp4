@@ -1,5 +1,6 @@
 module.exports = function(app){
   var controller = app.controllers.livro;
+  path = require('path');
 
   app.route('/v1/livros')
     .post(controller.create)

@@ -1,56 +1,56 @@
-var contato1 =  {
+var livro1 =  {
     "nome": "Engenharia de Software",
     "img": "http://diggyn.com.br/lp4/sommerville.jpg",
     "autor": "Sommerville",
     "aluguel": null
   };
-  db.teste.insert(contato1);
+  db.livros.insert(livro1);
   
-var contato2 = {
+var livro2 = {
     "nome": "Engenharia de Software",
     "img": "http://diggyn.com.br/lp4/pressman.jpg",
     "autor": "Pressman",
     "aluguel": null
   };
-db.teste.insert(contato2);
+db.livros.insert(livro2);
 
-var contato3 ={
+var livro3 ={
     "nome": "Organização e Estrutura de Computadores",
     "img": "http://diggyn.com.br/lp4/tanenbaum.jpg",
     "autor": "Tanenbaum",
     "aluguel": null
   };
-db.teste.insert(contato3);
+db.livros.insert(livro3);
   
-var contato4 = {
+var livro4 = {
     "nome": "Sistemas Operacionais com JAVA",
     "img": "http://diggyn.com.br/lp4/silberchatz.jpg",
     "autor": "Silberchatz",
     "aluguel": null
   };
-db.teste.insert(contato4);
+db.livros.insert(livro4);
 
-var contato5 =  {
+var livro5 =  {
     "nome": "PHP 5",
     "img": "http://diggyn.com.br/lp4/soares.jpg",
     "autor": "Soares",
     "aluguel": null
   };
-db.teste.insert(contato5);
+db.livros.insert(livro5);
 
-var contato6 = {
+var livro6 = {
     "nome": "Java para WEB",
     "img": " http://diggyn.com.br/lp4/alves.jpg",
     "autor": "Alves",
     "aluguel": null
   };
-db.teste.insert(contato6);
+db.livros.insert(livro6);
 
-var contato7 = {
+var livro7 = {
     "nome": "JavaScript",
     "img": "http://diggyn.com.br/lp4/reis.jpg",
     "autor": "Reis",
     "aluguel": null
   }
-db.teste.insert(contato7);
+db.livros.insert(livro7);
 
