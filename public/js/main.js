@@ -26,11 +26,6 @@ angular.module('biblioteca', ['minhasDiretrizes', 'ngAnimate', 'ngRoute'])
                 controller: 'NovoLivroController'
             });
 
-            $routeProvider.when('/livros/edit/:livroId', {
-                templateUrl: 'partials/novo-livro.html',
-                controller: 'NovoLivroController'
-            });
-
             /* toda rota que não for declarada será considerada inválida, e vai ativar este método que vai redirecionar para a rota /livros */
             $routeProvider.otherwise({redirectTo: '/livros'});
         });

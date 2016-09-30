@@ -3,9 +3,6 @@
 <div class="jumbotron">
     <h1 class="text-center">Biblioteca</h1>
 </div>
-<p ng-show="mensagem_sucesso.length" class="alert alert-success">{{mensagem_sucesso}}</p>
-<p ng-show="mensagem_falha.length" class="alert alert-danger">{{mensagem_falha}}</p>
-
 
 <div class="row">
     <div class="col-xs-12">
@@ -30,10 +27,6 @@
         <!-- lacunas criadas para na requisição da página, a mesma ser reconstruída substituindo os valores livro.nome e livro.img-->
         <meu-painel valor="{{livro.nome}}">
             <img src="{{livro.img}}" class="img-responsive center-block" alt="{{livro.nome}}"/>
-          
-            <a href="livros/edit/{{livro._id}}" class="btn btn-primary btn-block">Editar</a>
-            <button ng-click="remover(livro)" class="btn btn-danger btn-block"> Remover</button>
-        
         </meu-painel>
     </div>
 </div>

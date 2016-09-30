@@ -14,8 +14,7 @@ nas mensagens a serem exibidas-->
         
         <!-- mensagem de sucesso, caso o livro tenha sido cadastrado. o ng-show exibe se for true. e o mensagem.length retorna a quantidade de elementos na minha string mensagem e se ela for 0
             o ng-show vai ser false, pq 0 é false no javascript. -->
-        <p ng-show="mensagem_sucesso.length" class="alert alert-success">{{mensagem_sucesso}}</p>
-        <p ng-show="mensagem_falha.length" class="alert alert-danger">{{mensagem_falha}}</p>
+        <p ng-show="mensagem.length" class="alert alert-success">{{mensagem}}</p>
         
         <div class="form-group">
             <label>Nome Livro</label>
@@ -38,14 +37,6 @@ nas mensagens a serem exibidas-->
             <label>URL Imagem</label>
             <input ng-model="livro.img" name="img" class="form-control" required>
             <span ng-show="formulario.$submitted && formulario.img.$error.required" class="form-control alert-danger">Imagem é Obrigatório!</span>
-        </div>
-        
-        <div class="form-group" ng-controller="UsuarioController">
-            <label>Aluguel Livro</label>
-            <select name="aluguel" class="form-control" ng-model="livro.aluguel" 
-                    ng-options="usuario._id as usuario.nome for usuario in usuarios">
-                <option value="">Selecione o usuário</option>
-            </select>
         </div>
 
         <button type="submit" class="btn btn-primary">

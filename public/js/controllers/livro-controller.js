@@ -9,9 +9,6 @@ angular.module('biblioteca').controller('LivroController', function ($scope, $ht
     // String vazia que recebe os dados do teclado para o filtro da busca
     $scope.filtro = '';
 
-    $scope.mensagem_sucesso = '';
-    $scope.mensagem_falha = '';
-
     //Array livros contendo lista de livros com seus atributos
     //Atributos mapeados que vão subistituir as "lacunas" do HTML
     $scope.livros = [];
@@ -26,18 +23,5 @@ angular.module('biblioteca').controller('LivroController', function ($scope, $ht
             .error(function (erro) {
                 console.log(erro);
             });
-
-    $scope.remover = function (livro) {
-        $http.delete('v1/livros/' + livro._id)
-                .success(function () {
-                    var indiceLivro = $scope.livros.indexOf(livro);
-                    $scope.livros.splice(indiceLivro, 1);
-                    $scope.mensagem_sucesso = 'Livro Foi Removido com Sucesso!';
-                })
-                .error(function (erro) {
-                    console.log(erro);
-                    $scope.mensagem_falha = 'Não Foi Possível Remover!';
-                });
-    };
 
 });
