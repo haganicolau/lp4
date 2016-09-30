@@ -11,7 +11,7 @@ module.exports = function (app) {
      * método responsável por ler a url e a partir do método HTTP executar 
      * a função do controller adequada
      */
-    app.route('/v1/contatos')
+    app.route('/contatos')
         .get(controller.findAll)
         .post(controller.create)
         .put(controller.update);
@@ -20,7 +20,7 @@ module.exports = function (app) {
      * Permite criar um arota no qual passa o id de uma entidade, no caso um 
      * contato
      */
-    app.route('/v1/contatos/:id')
+    app.route('/contatos/:id')
         .get(controller.findOne)
         .delete(controller.delete);
 

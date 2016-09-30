@@ -1,8 +1,19 @@
+use lp4;
+
+db.dropDatabase();
+
+use lp4;
+
+var usuario1 = {
+    "nome": "Hagamenon nicolau de Oliveira"
+};
+db.usuarios.insert(usuario1);
+
 var livro1 =  {
     "nome": "Engenharia de Software",
     "img": "http://diggyn.com.br/lp4/sommerville.jpg",
     "autor": "Sommerville",
-    "aluguel": null
+    "categoria": null
   };
   db.livros.insert(livro1);
   
@@ -10,7 +21,7 @@ var livro2 = {
     "nome": "Engenharia de Software",
     "img": "http://diggyn.com.br/lp4/pressman.jpg",
     "autor": "Pressman",
-    "aluguel": null
+    "categoria": null
   };
 db.livros.insert(livro2);
 
@@ -18,7 +29,7 @@ var livro3 ={
     "nome": "Organização e Estrutura de Computadores",
     "img": "http://diggyn.com.br/lp4/tanenbaum.jpg",
     "autor": "Tanenbaum",
-    "aluguel": null
+    "categoria": null
   };
 db.livros.insert(livro3);
   
@@ -26,7 +37,7 @@ var livro4 = {
     "nome": "Sistemas Operacionais com JAVA",
     "img": "http://diggyn.com.br/lp4/silberchatz.jpg",
     "autor": "Silberchatz",
-    "aluguel": null
+    "categoria": null
   };
 db.livros.insert(livro4);
 
@@ -34,7 +45,7 @@ var livro5 =  {
     "nome": "PHP 5",
     "img": "http://diggyn.com.br/lp4/soares.jpg",
     "autor": "Soares",
-    "aluguel": null
+    "categoria": null
   };
 db.livros.insert(livro5);
 
@@ -42,7 +53,7 @@ var livro6 = {
     "nome": "Java para WEB",
     "img": " http://diggyn.com.br/lp4/alves.jpg",
     "autor": "Alves",
-    "aluguel": null
+    "categoria": null
   };
 db.livros.insert(livro6);
 
@@ -50,7 +61,7 @@ var livro7 = {
     "nome": "JavaScript",
     "img": "http://diggyn.com.br/lp4/reis.jpg",
     "autor": "Reis",
-    "aluguel": null
+    "categoria": null
   }
 db.livros.insert(livro7);
 
