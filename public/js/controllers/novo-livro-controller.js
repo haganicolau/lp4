@@ -3,7 +3,8 @@ angular.module('biblioteca')
         .controller('NovoLivroController', function ($scope, $http) {
             /* objeto scope no qual vou pendurar meus objetos que vou usar no html*/
             $scope.livro = {};
-            $scope.mensagem = '';
+            $scope.mensagem_sucesso = '';
+            $scope.mensagem_falha = '';
 
             /* função chamada na diretiva ng-sumit quando for dado um sumit no nosso formulário será executado este método*/
             $scope.submeter = function () {
@@ -19,6 +20,7 @@ angular.module('biblioteca')
                             /* se der erro passa o erro para o console */
                             .error(function (erro) {
                                 console.log(erro);
+                                $scope.mensagem_falha = 'Não foi possível efetuar o cadastro!';
                             });
                 }
             };

@@ -9,6 +9,21 @@ var usuario1 = {
 };
 db.usuarios.insert(usuario1);
 
+var usuario2 = {
+    "nome": "Flávio Costa"
+};
+db.usuarios.insert(usuario2);
+
+var usuario3 = {
+    "nome": "Leandro de Oliveira"
+};
+db.usuarios.insert(usuario3);
+
+var usuario4 = {
+    "nome": "Rita de Souza"
+};
+db.usuarios.insert(usuario4);
+
 var livro1 =  {
     "nome": "Engenharia de Software",
     "img": "http://diggyn.com.br/lp4/sommerville.jpg",
