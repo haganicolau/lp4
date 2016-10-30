@@ -5,7 +5,7 @@
 var http = require('http'),
     app = require('./config/express')();
     //permite conectar no banco de nome 'estudo'
-require('./config/database.js')('mongodb://<heroku_zfgdnjmg>:<haga3321>@ds139277.mlab.com:39277/heroku_zfgdnjmg');
+require('./config/database.js')('mongodb://haganicolau:haga3321@ds139277.mlab.com:39277/heroku_zfgdnjmg');
 
 /*
  * cria um evento de ficar escutando a porta selecionada pela varíavel de 
