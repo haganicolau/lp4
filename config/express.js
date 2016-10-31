@@ -33,7 +33,7 @@ module.exports = function () {
     var app = express();
     
     /*varíavel ambiente criada (chave, valor) para permitir setar a porta */
-    app.set('port', 3000);
+    app.set('port', 8080);
 
     /*
      * Permite que os arquivos na pasta public estarão disponíveis no navegador
